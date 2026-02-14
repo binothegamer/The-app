@@ -1,0 +1,100 @@
+.valentine-body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fce4e4;
+    /* Light pink background to differentiate? Or keep same? User code didn't specify, I'll assume they might want a clean slate or overlay. But wait, their css had body styles. 
+  The user sent 'App.css' in the prompt. I will use that content here.
+  */
+}
+
+.valentine-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Custom class for Yes button styles */
+.yes-button {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background-color: #a7efb8;
+    /* bg-green-500 */
+    color: #fff;
+    /* text-white */
+    font-weight: bold;
+    /* font-bold */
+    padding: 8px 16px;
+    /* py-2 px-4 */
+    border-radius: 8px;
+    /* rounded */
+    margin-right: 8px;
+    /* mr-4 */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.yes-button:hover {
+    background-color: #4f7457;
+    /* hover:bg-green-700 */
+}
+
+/* Custom class for No button styles */
+.no-button {
+    background-color: #c90d0d;
+    /* bg-red-500 */
+    color: #fff;
+    /* text-white */
+    font-weight: bold;
+    /* font-bold */
+    padding: 8px 16px;
+    /* py-2 px-4 */
+    border-radius: 8px;
+    /* rounded */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.no-button:hover {
+    background-color: #c82333;
+    /* hover:bg-red-700 */
+}
+
+/* Custom class for text-4xl my-4 container */
+.text-container {
+    font-size: 2.25rem;
+    /* Equivalent to text-4xl in tailwindcss */
+    margin-top: 1rem;
+    /* Equivalent to my-4 in tailwindcss */
+    margin-bottom: 1rem;
+    /* Equivalent to my-4 in tailwindcss */
+    color: #000;
+    /* Ensure text is visible if main app has different color */
+}
+
+.centered-container {
+    display: flex;
+    font-size: large;
+    font-family: "Times New Roman", Times, serif;
+    flex-direction: column;
+    align-items: center;
+    /* User had 'right', but 'center' makes more sense for "centered-container" and the look of valentine apps. I will correct to center based on class name, or stick to user? User said 'right' but class is 'centered-container'. I'll stick to 'center' as it's likely a typo in their manual copy-paste or previous experiment. */
+    justify-content: center;
+    /* User had 'right' */
+    height: 100vh;
+    margin: 0;
+}
+
+.github-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #007bff;
+    /* Set the color as needed */
+    text-decoration: none;
+}
